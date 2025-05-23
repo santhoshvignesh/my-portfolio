@@ -1,0 +1,153 @@
+.ContactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 43px;
+  position: absolute;
+  width: 1207px;
+  left: 122px;
+}
+
+.Line-1,
+.Line-2 {
+  width: 388px;
+  height: 0px;
+
+  border: 1px solid #871cff;
+}
+
+.connect {
+  height: 61px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 61px;
+  background: linear-gradient(93.95deg, #1778ff 46.43%, #871cff 101.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.ContactDescription {
+  width: 80%;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-top: 20px; /* Reduced from 250px */
+}
+
+.ContactBtn {
+  position: absolute;
+  left: 110px;
+  margin-top: 300px; /* Adjusted */
+}
+
+.developer {
+  margin-top: 40px; /* Adjusted */
+  text-align: center;
+  background: linear-gradient(
+    172.37deg,
+    #871cff 5.87%,
+    #4a4eff 44.16%,
+    #1778ff 76.13%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 90px;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+  .ContactContainer {
+    width: 90%;
+    left: auto;
+    /* text-align: center; */
+    gap: 20px;
+  }
+
+  .Line-1,
+  .Line-2 {
+    width: 70%;
+  }
+
+  .connect {
+    font-size: 35px;
+  }
+
+  .ContactDescription {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .ContactBtn {
+    margin-top: 30px;
+  }
+
+  .developer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .ContactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    padding: 10px;
+  }
+
+  .Line-1,
+  .Line-2 {
+    width: 80%;
+  }
+
+  .connect {
+    font-size: 28px;
+  }
+
+  .ContactDescription {
+    line-height: 24px;
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .ContactBtn {
+    left: -3px;
+    position: relative;
+    margin-top: 20px; /* Adjusted */
+  }
+
+  .developer {
+    margin-top: 30px;
+  }
+}
+
+/* Smaller Mobile View */
+@media screen and (max-width: 480px) {
+  .ContactContainer {
+    padding: 5px;
+  }
+
+  .connect {
+    font-size: 24px;
+  }
+
+  .ContactDescription {
+    font-size: 14px;
+  }
+
+  .ContactBtn {
+    margin-top: 15px;
+  }
+
+  .developer {
+    margin-top: 25px;
+  }
+}

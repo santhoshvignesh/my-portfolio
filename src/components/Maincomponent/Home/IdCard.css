@@ -1,0 +1,229 @@
+.IdCard {
+  position: absolute;
+  width: 292px;
+  height: 411px;
+  left: 933px;
+  top: 223px;
+
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 20px rgba(23, 120, 255, 0.12),
+    /* Soft main shadow */ 0px 0px 10px rgba(23, 120, 255, 0.08),
+    /* Subtle middle glow */ 0px 4px 6px rgba(23, 120, 255, 0.05),
+    /* Light bottom lift */ 0px 2px 3px rgba(23, 120, 255, 0.03);
+  border-radius: 10px;
+}
+.ID-Card-contents {
+  position: absolute;
+  left: 3.77%;
+  right: 3.77%;
+  top: 5.6%;
+  bottom: 9.73%;
+}
+/* .PhotoFrame {
+  position: absolute;
+  left: 21.92%;
+  right: 21.92%;
+z-index: 2;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50% ;
+
+  background: linear-gradient(90deg, #1778ff 0%, #871cff 100%);
+  padding: 5px; 
+} */
+.myPhoto {
+  border: 3px solid #871cff;
+  position: absolute;
+  left: 21.92%;
+  right: 21.92%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* padding: 5px; */
+}
+
+.IdCardName {
+  /* VIGNESH A */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1778ff;
+
+  mix-blend-mode: normal;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 30.82%;
+  right: 30.48%;
+  top: 48.66%;
+  bottom: 41.36%;
+}
+.role {
+  width: 132px;
+  height: 19px;
+  font-family: "Nusar";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 19px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #1778ff 0%, #871cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  mix-blend-mode: normal;
+}
+.Designer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  left: 23.97%;
+  right: 23.97%;
+  top: 57.91%;
+  bottom: 32.6%;
+}
+.AddressContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  left: 15.41%;
+  right: 12.33%;
+  top: 65.94%;
+  bottom: 24.82%;
+}
+.Address {
+  /* width: 191px; */
+  height: 18px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1778ff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.Line {
+  position: absolute;
+  left: 6.51%;
+  right: 7.19%;
+  top: 77.86%;
+  bottom: 22.14%;
+  border: 1px solid #871cff;
+}
+.SocialContainer {
+  position: absolute;
+  left: 3.77%;
+  right: 17%;
+  top: 80.54%;
+  bottom: 9.73%;
+}
+.Icons img {
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.photoshop-icon img {
+  position: absolute;
+  width: 70px;
+  height: 68.25px;
+  left: 817.76px;
+  top: 211.6px;
+
+  /* background: url(photoshop.png); */
+  transform: rotate(-16.08deg);
+}
+.illustrator-icon img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 1249.58px;
+  top: 553.67px;
+  transform: rotate(0.78deg);
+}
+
+.react-icon img {
+  position: absolute;
+  width: 70px;
+  height: 73.43px;
+  left: 1264.1px;
+  top: 159.46px;
+  transform: rotate(13.68deg);
+}
+
+.figma-icon img {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 827.88px;
+  top: 480px;
+  transform: rotate(7.57deg);
+}
+
+@media (max-width: 480px) {
+  .IdCard {
+    position: relative;
+    width: 292px;
+    height: 411px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+    left: -7px;
+    top: 700px;
+  }
+  .Icons img {
+    /* animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i)); */
+    display: none;
+  }
+}

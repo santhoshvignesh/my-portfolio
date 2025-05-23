@@ -1,0 +1,12 @@
+.ProjectComponents {
+  margin-top: 500px;
+}
+.portfolioElements {
+  max-width: 100%;
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .ProjectComponents {
+    margin-top: 900px;
+  }
+}

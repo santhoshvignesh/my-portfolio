@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Designer';
+  src: url('/fonts/Designer.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nusar';
+  src: url('/fonts/nusar.ttf') format('truetype');
+}

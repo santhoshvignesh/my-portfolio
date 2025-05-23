@@ -1,0 +1,31 @@
+.HomeElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .HomeElements {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 720px) {
+  .HomeElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeElements {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

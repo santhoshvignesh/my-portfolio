@@ -1,0 +1,126 @@
+.homeContainer {
+  /* position: absolute; */
+  height: 465.16px;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  left: 97px;
+  top: 250px;
+}
+.MyName {
+  background: linear-gradient(90deg, #1778ff, #871cff, #1778ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  animation: moveGradient 5s ease-in-out infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.intoDescription {
+  height: 61px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+  color: var(--secondary-color);
+
+  /* color: rgba(255, 255, 255, 0.7); */
+}
+.objective {
+  width: 682px;
+  height: 70px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: var(--text-color);
+  /* color: rgba(255, 255, 255, 0.7); */
+}
+.intoDescription p {
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .homeContainer {
+    height: 465.16px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    left: 97px;
+    top: 196px;
+  }
+}
+@media (max-width: 768px) {
+  .homeContainer {
+    /* position: relative; */
+    /* left: -80px; */
+    text-align: center;
+  }
+  .intro {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 196px;
+    /* display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+     text-align: center; */
+  }
+  .intoDescription {
+    font-weight: bold;
+    height: 61px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .objective {
+    width: 350px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .intoDescription p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeContainer {
+    height: auto;
+    padding: 10px;
+  }
+  .intoDescription {
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .objective {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
