@@ -226,7 +226,7 @@ Error generating stack: `+l.message+`
       height: 39px;
     }
   }
-`,Iv=()=>{const i=()=>{window.open("/assets/Resume.pdf","_blank")};return m.jsx(tg,{children:m.jsx("button",{className:"btn",onClick:i,children:"View My Resume"})})},tg=fa.div`
+`,Iv=()=>{const i=()=>{window.open("./assets/Resume.pdf","_blank")};return m.jsx(tg,{children:m.jsx("button",{className:"btn",onClick:i,children:"View My Resume"})})},tg=fa.div`
   .btn {
     --border-color: linear-gradient(-45deg, #871cff, #7e03aa, #1778ff);
     --border-width: 0.125em;
