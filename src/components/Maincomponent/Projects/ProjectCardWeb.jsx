@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 import "./ProjectCardWeb.css";
 
+import SynergyWebsite from "/public/images/ProjectImages/webProjects/synergy.png";
+import CodeQuest from "/public/images/ProjectImages/webProjects/codequest.png";
+
 const projects = [
   {
-    img: "./images/ProjectImages/webProjects/synergy.png",
+    img: SynergyWebsite,
     title: "Synergy Website",
     description:
-      "Contributed to the Synergy Website as a front-end developer in a freelance team project .",
+      "Contributed to the Synergy Website as a front-end developer in a freelance team project.",
     link: "https://synergyworld-malaysia.org",
   },
   {
-    img: "./images/ProjectImages/webProjects/codequest.png",
-    title: "Code Quest ",
+    img: CodeQuest,
+    title: "Code Quest",
     description:
-      "Maintaining and enhancing Code Quest, a web-based coding skill platform  built by seniors.",
-    link: "",
+      "Maintaining and enhancing Code Quest, a web-based coding skill platform built by seniors.",
+    link: "https://acgcet-codequest.web.app",
   },
 ];
 
@@ -32,14 +35,19 @@ function ProjectCard() {
           {projects
             .slice(0, showMore ? projects.length : 3)
             .map((project, index) => (
-              <div className="card">
+              <div className="card" key={index}>
                 <img
                   src={project.img}
-                  alt="Service Logo"
+                  alt={project.title}
                   className="card-image"
                 />
+
                 <h2 className="card-title">{project.title}</h2>
-                <p className="card-description">{project.description}</p>
+
+                <p className="card-description">
+                  {project.description}
+                </p>
+
                 <button
                   className="view-btn"
                   onClick={() => handleViewPoster(project.link)}
@@ -49,6 +57,7 @@ function ProjectCard() {
               </div>
             ))}
         </div>
+
         <button
           className="view-more-btn"
           onClick={() => setShowMore(!showMore)}

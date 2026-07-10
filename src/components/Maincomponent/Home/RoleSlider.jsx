@@ -45,7 +45,6 @@ const StyledWrapper = styled.div`
     height: 61px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .word {

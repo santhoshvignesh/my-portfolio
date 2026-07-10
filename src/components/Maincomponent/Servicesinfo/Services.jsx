@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import "./Services.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import graphicIcon from "/public/assets/icons/Graphic-design-icon.webp";
+import uxIcon from "/public/assets/icons/ux-design-icon.webp";
+import webIcon from "/public/assets/icons/web-development-icon.webp";
 function Services() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
@@ -10,21 +12,21 @@ function Services() {
 
   const servicesData = [
     {
-      icon: "../../assets/icons/Graphic-design-icon.png",
+      icon: graphicIcon,
       title: "Graphic Design",
       description:
         "Brand identity, digital illustrations, and designs that speak to your audience",
       aosDelay: 1000,
     },
     {
-      icon: "../../assets/icons/ux-design-icon.png",
+      icon: uxIcon,
       title: "UI/UX Design",
       description:
         "Intuitive user interfaces and seamless experiences that engage and delight users",
       aosDelay: 2000,
     },
     {
-      icon: "../../assets/icons/web-development-icon.png",
+      icon: webIcon,
       title: "Web Development",
       description:
         "Responsive websites built with HTML, CSS, JavaScript, and React for a flawless experience across all devices",

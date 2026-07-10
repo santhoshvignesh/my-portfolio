@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Button = () => {
   const handleDownload = () => {
-    window.open("/assets/Resume.pdf", "_blank"); // Opens in a new tab
+    window.open("./assets/Vignesh_Resume.pdf", "_blank"); // Opens in a new tab
   };
 
   return (

@@ -1,29 +1,34 @@
 import React, { useState } from "react";
 
+import Resumate from "/public/images/ProjectImages/UiUx/resumate.png";
+import Restaurent from "/public/images/ProjectImages/UiUx/restaurent.png";
+import FurnitureShop from "/public/images/ProjectImages/UiUx/furnitureshop.png";
+import MyResume from "/public/images/ProjectImages/UiUx/myresume.png";
+
 const projects = [
   {
-    img: "./images/ProjectImages/UiUx/resumate.png",
+    img: Resumate,
     title: "Resumate",
     Link: "https://www.figma.com/proto/WDRFN2pYya3RJdWLneEJ54/Untitled?page-id=0%3A1&node-id=1-2&p=f&viewport=369%2C386%2C0.25&t=dbnjTkGpDkjeTajq-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2",
-    description: "AI and ML based resume analyser and job suggesting  website",
+    description:
+      "AI and ML based resume analyser and job suggesting website",
   },
   {
-    img: "./images/ProjectImages/UiUx/restaurent.png",
+    img: Restaurent,
     title: "Restaurent-website",
     Link: "https://www.figma.com/proto/0mv9JkJas89aLProsgJtV6/Untitled?page-id=0%3A1&node-id=1-2&p=f&viewport=799%2C178%2C0.14&t=IZJ5jQq6iPKanUqw-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2",
     description:
       "A website design for a Restaurent to show food menu and Table booking",
   },
-
   {
-    img: "./images/ProjectImages/UiUx/furnitureshop.png",
+    img: FurnitureShop,
     title: "Furnitureshop-website",
     Link: "https://www.figma.com/proto/qIZt6edmvSyvG0cZR6QcXB/Furniture-Shop-Website?page-id=0%3A1&node-id=1-2&p=f&viewport=297%2C527%2C0.07&t=pAV1oomvUdl3eU0z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2",
     description:
       "A web-design for a FurnitureShop to show their Products and Price",
   },
   {
-    img: "./images/ProjectImages/UiUx/myresume.png",
+    img: MyResume,
     title: "My Portfolio",
     Link: "https://www.figma.com/proto/0yMZJ9dQgjU2mPYfaoVsgb/Untitled?page-id=0%3A1&node-id=136-278&p=f&viewport=585%2C380%2C0.13&t=BhXGhrkLsQxjlMQT-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2",
     description:
@@ -53,20 +58,23 @@ function ProjectCard() {
                     alt={project.title}
                     style={{ borderRadius: "5px", marginBottom: "10px" }}
                   />
+
                   <div className="overlay">
                     <div className="overlay-content">
                       <div className="card-title">{project.title}</div>
+
                       <div
                         className="poster-description"
                         style={{ fontSize: "14px" }}
                       >
                         {project.description}
                       </div>
+
                       <button
                         className="view-btn"
                         onClick={() => handleViewPoster(project.Link)}
                       >
-                        View
+                        Visit
                       </button>
                     </div>
                   </div>
@@ -74,6 +82,7 @@ function ProjectCard() {
               </div>
             ))}
         </div>
+
         <button
           className="view-more-btn"
           onClick={() => setShowMore(!showMore)}

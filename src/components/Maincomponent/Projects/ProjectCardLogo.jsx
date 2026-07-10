@@ -1,20 +1,25 @@
 import React, { useState } from "react";
 
+import Frame5 from "/public/images/ProjectImages/LogoProjects/Frame 5.png";
+import MyLogo from "/public/images/ProjectImages/LogoProjects/mylogo.png";
+import SynergyLogo from "/public/images/ProjectImages/LogoProjects/SYNERGY-TEXT-LOGO-1-mockup.jpg";
+import TuLogoMockup from "/public/images/ProjectImages/LogoProjects/TuLogomockup.png";
+
 const projects = [
   {
-    img: "./images/ProjectImages/LogoProjects/Frame 5.png",
+    img: Frame5,
     title: "Logo design for a CCTV installation Shop",
   },
   {
-    img: "./images/ProjectImages/LogoProjects/mylogo.png",
+    img: MyLogo,
     title: "Logo design for my Insta page",
   },
   {
-    img: "./images/ProjectImages/LogoProjects/SYNERGY-TEXT-LOGO-1-mockup.jpg",
-    title: "Logo design for Consulting Company ",
+    img: SynergyLogo,
+    title: "Logo design for Consulting Company",
   },
   {
-    img: "./images/ProjectImages/LogoProjects/TuLogomockup.png",
+    img: TuLogoMockup,
     title: "Logo design for Browsing Center",
   },
 ];
@@ -30,6 +35,7 @@ function ProjectCard() {
     <div>
       <div className="projectContainer">
         <div className="SubTitle">Logo Designs</div>
+
         <div className="Project-Cards">
           {projects
             .slice(0, showMore ? projects.length : 4)
@@ -41,9 +47,11 @@ function ProjectCard() {
                     src={project.img}
                     alt={project.title}
                   />
+
                   <div className="overlay">
                     <div className="overlay-content">
                       <div className="poster-title">{project.title}</div>
+
                       <button
                         className="view-btn"
                         onClick={() => handleViewPoster(project.img)}
@@ -56,6 +64,7 @@ function ProjectCard() {
               </div>
             ))}
         </div>
+
         <button
           className="view-more-btn"
           onClick={() => setShowMore(!showMore)}

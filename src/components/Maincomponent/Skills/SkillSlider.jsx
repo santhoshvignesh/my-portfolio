@@ -1,6 +1,15 @@
 import { useEffect } from "react";
 import styled from "styled-components";
-
+import html from "/public/assets/icons/html.png";
+import css from "/public/assets/icons/CSS.png" ;
+import javascript from "/public/assets/icons/javascript.png";
+import react from  "/public/assets/icons/React.png";
+import express from "/public/assets/icons/Express.svg";
+import sql from  "/public/assets/icons/Mysql.png";
+import Github from  "/public/assets/icons/GitHub.png";
+import Figma from  "/public/assets/icons/figma.png";
+import Illustrator from  "/public/assets/icons/Adobe-Illustrator-Icon-PNG.png";
+import Photoshop from  "/public/assets/icons/Adobe-Photoshop-Icon-PNG.png";
 const InfiniteScroll = () => {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
@@ -20,21 +29,27 @@ const InfiniteScroll = () => {
   }, []);
 
   const skills = [
-    { name: "HTML", img: "../../assets/icons/html.png" },
-    { name: "CSS", img: "../../assets/icons/CSS.png" },
-    { name: "JavaScript", img: "../../assets/icons/javascript.png" },
-    { name: "React", img: "../../assets/icons/React.png" },
-    { name: "Express.js", img: "../../assets/icons/Express.svg" },
-    { name: "My SQL", img: "../../assets/icons/Mysql.png" },
-    { name: "Github", img: "../../assets/icons/GitHub.png" },
-    { name: "Figma", img: "../../assets/icons/figma.png" },
+    { name: "HTML", img: html },
+    { name: "CSS", img: css},
+    {
+      name: "JavaScript",
+      img: javascript,
+    },
+    { name: "React", img:react },
+    {
+      name: "Express.js",
+      img: express,
+    },
+    { name: "My SQL", img: sql},
+    { name: "Github", img:  Github},
+    { name: "Figma", img: Figma },
     {
       name: "Illustrator",
-      img: "../../assets/icons/Adobe-Illustrator-Icon-PNG.png",
+      img: Illustrator,
     },
     {
       name: "Photoshop",
-      img: "../../assets/icons/Adobe-Photoshop-Icon-PNG.png",
+      img: Photoshop,
     },
   ];
 

@@ -1,33 +1,41 @@
 import React, { useState } from "react";
 import "./ProjectCardVertical.css";
 
+import MahendhiPoster from "/public/images/ProjectImages/Portraits/Mahendhi Poster.jpg";
+import ChipsMockup from "/public/images/ProjectImages/Portraits/chips mock up.jpg";
+import TamilUniverse from "/public/images/ProjectImages/Portraits/Tamil universe-Recovered.png";
+import SRComputers from "/public/images/ProjectImages/Portraits/SRComputers.png";
+import YaluBirthday from "/public/images/ProjectImages/Portraits/yalu birthday.jpg";
+import TempleInvitation from "/public/images/ProjectImages/Portraits/Temple invitation-2.png";
+import GaneshChadurthi from "/public/images/ProjectImages/Portraits/Ganesh Chadurthi.jpg";
+
 const projects = [
   {
-    img: "./images/ProjectImages/Portraits/Mahendhi Poster.jpg",
+    img: MahendhiPoster,
     title: "Poster Design for Mahendhi-Artist",
   },
   {
-    img: "./images/ProjectImages/Portraits/chips mock up.jpg",
+    img: ChipsMockup,
     title: "Chips cover design and Mockup",
   },
   {
-    img: "./images/ProjectImages/Portraits/Tamil universe-Recovered.png",
-    title: "Poster Design for a shop ",
+    img: TamilUniverse,
+    title: "Poster Design for a shop",
   },
   {
-    img: "./images/ProjectImages/Portraits/benz jpg 1.jpg",
-    title: "Car Launch Poster",
+    img: SRComputers,
+    title: "Poster design for a Computer Service Shop",
   },
   {
-    img: "./images/ProjectImages/Portraits/yalu birthday.jpg",
+    img: YaluBirthday,
     title: "Poster Design for a Baby Birthday",
   },
   {
-    img: "./images/ProjectImages/Portraits/Temple invitation-2.png",
-    title: "Invitation Design for a Temple Festival ",
+    img: TempleInvitation,
+    title: "Invitation Design for a Temple Festival",
   },
   {
-    img: "./images/ProjectImages/Portraits/Ganesh Chadurthi.jpg",
+    img: GaneshChadurthi,
     title: "Poster Design for Ganesh Chaturthi",
   },
 ];
@@ -43,6 +51,7 @@ function ProjectCard() {
     <div>
       <div className="projectContainer">
         <div className="SubTitle">Vertical Visions</div>
+
         <div className="Project-Cards">
           {projects
             .slice(0, showMore ? projects.length : 4)
@@ -54,9 +63,11 @@ function ProjectCard() {
                     src={project.img}
                     alt={project.title}
                   />
+
                   <div className="overlay">
                     <div className="overlay-content">
                       <div className="poster-title">{project.title}</div>
+
                       <button
                         className="view-btn"
                         onClick={() => handleViewPoster(project.img)}
@@ -69,6 +80,7 @@ function ProjectCard() {
               </div>
             ))}
         </div>
+
         <button
           className="view-more-btn"
           onClick={() => setShowMore(!showMore)}
