@@ -28,7 +28,7 @@ function HomeIntro() {
 
           <p className="objective" data-aos="fade-up" data-aos-delay="400">
             I bring ideas to life with creative design, seamless user
-            experiences, and clean, responsive code.
+            experiences, and clean, responsive code.
           </p>
           <div className="" data-aos="fade-up" data-aos-delay="500">
             <CvBtn />

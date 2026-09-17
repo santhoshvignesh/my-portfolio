@@ -9,7 +9,7 @@ function Contact() {
       <div className="Line-2"></div>
       <div className="ContactDescription">
         I’m open to collaborations, freelance opportunities, or just a friendly
-        chat about design, development, and all things creative.
+        chat about design, development, and all things creative.
       </div>
       <div className="ContactBtn">
         <ContactBtn />

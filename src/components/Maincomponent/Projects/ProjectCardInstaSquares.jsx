@@ -4,9 +4,6 @@ import Burger from "/public/images/ProjectImages/instasquares/Burger.jpg";
 import DiwaliWishPoster from "/public/images/ProjectImages/instasquares/Diwali wish poster.jpg";
 import JuicePoster from "/public/images/ProjectImages/instasquares/juice social media poster.jpg";
 import cctv from "/public/images/ProjectImages/instasquares/cctv.png";
-import AadharMoneyService from "/public/images/ProjectImages/instasquares/AadharMoneyService.png";
-import TamilUniverseCCTV from "/public/images/ProjectImages/instasquares/Tamil-Universe-CCTV-warning.png";
-import PanCardPoster from "/public/images/ProjectImages/instasquares/PanCardPoster.png";
 import FarewellPoster from "/public/images/ProjectImages/instasquares/Farewell_Poster.png";
 
 const projects = [
@@ -25,18 +22,6 @@ const projects = [
   {
     img: cctv,
     title: "Poster Design for a shop Gift Yours",
-  },
-  {
-    img: AadharMoneyService,
-    title: "Poster Design for a shop",
-  },
-  {
-    img: TamilUniverseCCTV,
-    title: "Poster Design for a CCTV installation shop",
-  },
-  {
-    img: PanCardPoster,
-    title: "Poster Design for a shop",
   },
   {
     img: FarewellPoster,
